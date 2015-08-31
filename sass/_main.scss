@@ -2,11 +2,24 @@ body{padding: 0; margin: 0; font-family: 'Open Sans', sans-serif; line-height: 1
 
 .teal{
   background-color: $teal;
+  a{color:#fff;}
 }
 
-section {
-  padding: 50px 100px;
+.grey{
+  background-color: $lt-grey;
+  a{color:#323232;}
 }
+
+.white{
+  background-color: #fff;
+  a{color:#01b193;}
+}
+
+.wrapper{width: 100%; max-width: 960px; margin: 0 auto;}
+section {
+  padding: 50px 0;
+}
+
 header{padding-top: 50px;}
 
 .class_logo{
@@ -19,34 +32,37 @@ header{padding-top: 50px;}
   p{
   width: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
+  letter-spacing: 0.025em;
+  line-height: 32px;
   font-weight: 500;
   }
 }
 
 h2{
-  font-size: 24px;
-  color: #323232;
+  font-size: 18px;
+  color: #01b193;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 ul{
   padding: 0;
   margin: 0;
-li{
-  list-style: none;
-  padding: 15px 0;
-  a{
-    font-size: 22px;
-    color:#fff;
-    text-decoration: none;
-    &:hover{
-      color:#01b193;
-      -webkit-transition: ease 1s;
-      -moz-transition: ease 1s;
-      -o-transition: ease 1s;
-      transition: ease 1s;
+  li{
+    list-style: none;
+    padding: 15px 0;
+    a{
+      font-size: 28px;
+      letter-spacing: 0.045em;
+      text-decoration: none;
+      &:hover{
+        color:#01b193;
+        -webkit-transition: ease-in-out 0.075s;
+        -moz-transition: ease-in-out 0.075s;
+        -o-transition: ease-in-out 0.075s;
+        transition: ease-in-out 0.075s;
+      }
     }
   }
-}
 }
